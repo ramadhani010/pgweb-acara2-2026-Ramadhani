@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acara 2 | Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        main {
+            margin-top: 80px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark shadow fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cilacap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="bi bi-house-fill"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#deskripsi"> <i class="bi bi-journal-text"></i> Deskripsi</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#penduduk"><i class="bi bi-people-fill"></i> Penduduk</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kecamatan"><i class="bi bi-card-list"></i> Kecamatan</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#link"><i class="bi bi-link-45deg"></i> Sumber</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gambar"><i class="bi bi-image-fill"></i> Gambar</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#InfoModal"><i class="bi bi-info-circle-fill"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Title -->
+        <div class="alert alert-primary shadow text-center" role="alert">
+            <h3>Cilacap</h3>
+            <h5>Jawa Tengah</h5>
+        </div>
+
+        <!-- Deskripsi -->
+        <div class="card shadow" id="deskripsi">
+            <div class="card-header">
+                <h5><i class="bi bi-journal-text"> </i>Deskripsi</h5>
+            </div>
+            <div class="card-body">
+                <p>Kabupaten Cilacap (Hanacaraka: ꦕꦶꦭꦕꦥ꧀ , Aksara Sunda: ᮎᮤᮜᮎᮕ᮪, Pegon: چيلاچاڤ) adalah sebuah wilayah
+                    kabupaten
+                    yang terletak di Provinsi Jawa Tengah, Indonesia. Kabupaten ini beribukota di Cilacap. Kabupaten ini
+                    berbatasan langsung dengan Kabupaten Brebes dan Kabupaten Banyumas, Kabupaten Kuningan (Jawa Barat)
+                    di
+                    utara, Kabupaten Banyumas dan Kabupaten Kebumen di timur, Samudra Hindia di selatan, serta Kabupaten
+                    Ciamis,
+                    Kota Banjar, dan Kabupaten Pangandaran (Jawa Barat) di sebelah Barat.
+                    Berbatasan langsung dengan Provinsi Jawa Barat, Cilacap merupakan daerah pertemuan Budaya Jawa
+                    Banyumasan
+                    dengan budaya Sunda (Priangan Timur). Nusakambangan, sebuah pulau yang tertutup dan terdapat lembaga
+                    pemasyarakatan (Lapas) Kelas I, berada di kabupaten ini. Ada beberapa Lapas Kelas I yang masih aktif
+                    antara
+                    lain: Lapas Permisan, Lapas Kembangkuning, Lapas Batu, dan Lapas Besi.
+                </p>
+            </div>
+        </div>
+
+        <!-- Penduduk -->
+        <div class="card shadow mt-3" id="penduduk">
+            <div class="card-header">
+                <h5><i class="bi bi-people-fill"> </i>Penduduk</h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+
+                    <tr>
+                        <th>No</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Jumlah</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Laki-laki</td>
+                        <td>1.043.157 Jiwa</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Perempuan</td>
+                        <td>1.016.591 Jiwa</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Total</td>
+                        <td>2.059.748 Jiwa</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Kecamatan -->
+        <div class="card shadow mt-3" id="kecamatan">
+            <div class="card-header">
+                <h5><i class="bi bi-card-list"> </i>Kecamatan</h5>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Adipala</li>
+                    <li>Bantarsari</li>
+                    <li>Binangun</li>
+                    <li>Cilacap Selatan</li>
+                    <li>Cilacap Tengah</li>
+                    <li>Cilacap Utara</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Link -->
+        <div class="card shadow mt-3" id="link">
+            <div class="card-header">
+                <h5><i class="bi bi-link-45deg"> </i>Sumber</h5>
+            </div>
+            <div class="card-body">
+                <a href="https://id.wikipedia.org/wiki/Daftar_kecamatan_dan_kelurahan_di_Kabupaten_Cilacap"
+                    target="_blank" rel="noopener noreferrer">Wikipedia</a>
+            </div>
+        </div>
+
+        <!-- Gambar -->
+        <div class="card shadow mt-3" id="gambar">
+            <div class="card-header">
+                <h5><i class="bi bi-image-fill"> </i>Gambar</h5>
+            </div>
+            <div class="card-body">
+                <!-- Image -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Barracks%2C_Benteng_Pendem%2C_Cilacap_2015-03-21.jpg/330px-Barracks%2C_Benteng_Pendem%2C_Cilacap_2015-03-21.jpg?utm_source=id.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                    width="500">
+
+                <hr>
+                <!-- iframe -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/m3IRzjFjCS0?si=wMZIYl3g8fp7CBbW"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="InfoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Info</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td>Ramadhani Nu Lativa</td>
+                        </tr>
+                        <tr>
+                            <td>NIM</td>
+                            <td>:</td>
+                            <td>25/557751/SV/26226</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas</td>
+                            <td>:</td>
+                            <td>B</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
